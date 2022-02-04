@@ -1,0 +1,339 @@
+
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+
+/* 
+    Created on : 3 Feb, 2022, 2:50:11 PM
+    Author     : fwcbn
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #353836;
+	color: white;
+	font-family: "Poppins", sans-serif;
+}
+
+header a {
+	text-decoration: none;
+}
+
+header {
+	padding: 0 20px;
+	background-color: #16223e;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#brand {
+	font-weight: bold;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+}
+
+#brand a {
+	color: #09c372;
+}
+
+ul {
+	list-style: none;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+ul a {
+	color: white;
+}
+
+ul li {
+	padding: 5px;
+	margin-left: 10px;
+}
+
+ul li:hover {
+	transform: scale(1.1);
+	transition: 0.3s;
+}
+
+#login,
+#signup {
+	border-radius: 5px;
+	padding: 5px 8px;
+}
+
+#login {
+	border: 1px solid #498afb;
+}
+
+#signup {
+	border: 1px solid #ff3860;
+}
+
+#signup a {
+	color: #ff3860;
+}
+
+#login a {
+	color: #498afb;
+}
+
+#hamburger-icon {
+	margin: auto 0;
+	display: none;
+	cursor: pointer;
+}
+
+#hamburger-icon div {
+	width: 35px;
+	height: 3px;
+	background-color: white;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+
+.open .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-6px, 6px);
+	transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+	opacity: 0;
+}
+
+.open .bar3 {
+	-webkit-transform: rotate(45deg) translate(-6px, -8px);
+	transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.mobile-menu {
+	display: none;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	height: calc(100vh - 50px);
+	width: 100%;
+}
+
+.mobile-menu li {
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+	header nav {
+		display: none;
+	}
+	#hamburger-icon {
+		display: block;
+	}
+}
+
+.bg-b {
+	background: #16223e;
+	padding-bottom: 20px;
+	padding-top: 25px;
+}
+
+.bg-b h2 {
+	color: white;
+}
+
+.bg-b .tag-line .cont {
+	margin-left: 140px;
+}
+
+.p-d {
+	padding: 10px;
+	border: 1px solid #f1f2f6;
+}
+
+.form-style input {
+	border: 0;
+	height: 50px;
+	border-radius: 0;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.form-style input:focus {
+	border-bottom: 1px solid #007bff;
+	box-shadow: none;
+	outline: 0;
+	background-color: #ebebeb;
+}
+
+.sideline {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #ccc;
+}
+
+button {
+	height: 50px;
+}
+
+.sideline:before,
+.sideline:after {
+	content: '';
+	border-top: 1px solid #ebebeb;
+	margin: 0 20px 0 0;
+	flex: 1 0 20px;
+}
+
+.sideline:after {
+	margin: 0 0 0 20px;
+}
+
+
+/*# sourceMappingURL=style.css.map */
+
+
+
+
+.t-m ul li{
+  padding-top: 12px;
+  color: white;
+}
+
+
+
+.h-s {
+	padding-top: 2%;
+	background-color: #16223e;
+}
+
+.c-bg {
+	background-color: #16223e;
+	padding-top: 70px;
+	padding-bottom: 30px;
+}
+
+.c-bg h2 {
+	color: white;
+	font-weight: bold;
+}
+
+.box-sty {
+	background: white;
+	padding: 20px;
+	border-radius: 12px!important;
+	padding: 30px;
+	margin-top: -150px;
+}
+
+.box-p {
+	font-size: 12px;
+	margin-top: 2px;
+}
+
+.reg-form h2 {
+	font-weight: bold;
+}
+
+.main-box {
+	padding: 20px;
+	background-color: white;
+	width: 155px;
+	margin-top: 80px!important;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	margin-right: 10px!important;
+}
+
+.main-box .text-b {
+	margin-top: 15px;
+	text-align: center;
+	color: #a6aab1;
+}
+
+.text-b p {
+	font-size: 12px;
+}
+
+.circle {
+	margin-bottom: 10px;
+	margin: 0 auto;
+	width: 125px;
+	height: 125px;
+	border-radius: 80px;
+	background-color: red;
+}
+
+.circle img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	text-align: center!important
+}
+
+.main-box {
+	display: inline-block;
+	margin: 0;
+}
+
+.reg-form .form-control {
+	border-radius: 5px!important;
+	background-color: #ccc!important;
+	border: none!important;
+	color: #000!important;
+	padding: 5px!important;
+	margin-bottom: 20px;
+}
+
+.reg-form .form-check {
+	display: inline-block!important;
+	padding-right: 10px;
+}
+
+.b-l {
+	border-top: 2px solid lightgray;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.footer p {
+	color: #a6aab1;
+	margin-bottom: 0px;
+}
+
+.p-img img {
+	padding-top: 10px;
+}
+
+.social-icon img {
+	margin-left: 20px;
+}
+
+.circle img {
+	max-width: 100%;
+	width: 100%;
+}
+
+.b-sty {
+	padding: 0.375rem 3.75rem!important;
+	background-color: #16223e!important;
+	border-radius: 10px!important;
+}
+
